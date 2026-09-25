@@ -13,10 +13,12 @@ export function Modal({
   wide?: boolean;
 }) {
   const ref = useRef<HTMLDialogElement>(null);
+  const headingRef = useRef<HTMLHeadingElement>(null);
   useEffect(() => {
     const d = ref.current!;
     const opener = document.activeElement;
     d.showModal();
+    headingRef.current?.focus({ preventScroll: true });
     const previous = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     return () => {
@@ -53,7 +55,9 @@ export function Modal({
       }}
     >
       <div className="modal-heading">
-        <h2>{title}</h2>
+        <h2 ref={headingRef} tabIndex={-1}>
+          {title}
+        </h2>
         <button
           type="button"
           className="icon-button modal-close"

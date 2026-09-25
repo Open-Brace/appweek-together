@@ -969,6 +969,9 @@ footer nav a {
   font-size: 23px;
   font-weight: 650;
 }
+.modal-heading h2:focus {
+  outline: none;
+}
 .modal-close {
   flex-shrink: 0;
   width: 44px;
