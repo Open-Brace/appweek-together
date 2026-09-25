@@ -827,20 +827,30 @@ main {
 }
 footer {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
+  gap: 8px 20px;
   border-top: 1px solid var(--line);
   padding: 25px 0;
   font-size: 9px;
   color: #686d5e;
   margin-top: 35px;
 }
-footer > span:last-child {
+footer nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 13px;
+  gap: 16px;
 }
-footer .tiny-sun {
-  font-size: 17px;
+footer nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 12px;
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 .loading-state,
 .empty-state {
@@ -1967,11 +1977,8 @@ details form {
   footer {
     font-size: 8px;
     padding: 20px 0;
-    gap: 15px;
+    gap: 8px 15px;
     margin-top: 26px;
-  }
-  footer .tiny-sun {
-    font-size: 15px;
   }
   .invite-banner {
     padding: 12px;

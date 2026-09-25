@@ -1064,9 +1064,22 @@ export default function Planner() {
           )}
           <footer>
             <span>Built for a week worth remembering.</span>
-            <span>
-              New York, NY <span className="tiny-sun">✳</span>
-            </span>
+            <nav aria-label="Project links">
+              <a
+                href="https://github.com/Open-Brace/appweek-together"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Source code
+              </a>
+              <a
+                href="https://github.com/Open-Brace/appweek-together/issues/new/choose"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Report an issue
+              </a>
+            </nav>
           </footer>
         </main>
       </div>
