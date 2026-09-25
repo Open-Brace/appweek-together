@@ -1,0 +1,85 @@
+{
+  "props": {
+    "pageProps": {
+      "initialData": {
+        "kind": "event",
+        "data": {
+          "event": {
+            "name": "Paper Lantern App Workshop",
+            "start_at": "2026-10-20T13:00:00.000Z",
+            "end_at": "2026-10-20T16:00:00.000Z",
+            "cover_url": "https://example.com/workshop-cover.svg",
+            "geo_address_visibility": "public",
+            "geo_address_info": {
+              "mode": "shown",
+              "address": "Example Workshop Studio",
+              "full_address": "Example Workshop Studio, 100 Example Lane, New York, NY"
+            }
+          },
+          "description_mirror": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Paper Lantern",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "attrs": {
+                          "href": "https://example.com/paper-lantern"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": " and "
+                  },
+                  {
+                    "type": "text",
+                    "text": "Sample Studio",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "attrs": {
+                          "href": "https://example.com/sample-studio"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": " invite you to a fictional app workshop."
+                  },
+                  {
+                    "type": "hard_break"
+                  },
+                  {
+                    "type": "hard_break"
+                  },
+                  {
+                    "type": "text",
+                    "text": "All experience levels are welcome. Build a tiny prototype with a partner."
+                  },
+                  {
+                    "type": "hard_break"
+                  },
+                  {
+                    "type": "hard_break"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Bring a notebook. Sample supplies are provided."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

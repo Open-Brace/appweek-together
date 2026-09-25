@@ -1,0 +1,52 @@
+{
+  "name": "appweek-together",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "db:push": "drizzle-kit push",
+    "seed": "tsx scripts/import-events.ts",
+    "test:e2e": "playwright test",
+    "db:migrate": "drizzle-kit migrate",
+    "test:unit": "playwright test tests/luma-parser.spec.ts tests/linked-about-parser.spec.ts",
+    "sync:about": "tsx scripts/backfill-linked-about.ts"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "latest",
+    "better-auth": "latest",
+    "date-fns": "latest",
+    "date-fns-tz": "latest",
+    "drizzle-orm": "latest",
+    "lucide-react": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "cheerio": "latest",
+    "dotenv": "latest",
+    "drizzle-kit": "latest",
+    "tsx": "latest",
+    "typescript": "latest"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Open-Brace/appweek-together.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Open-Brace/appweek-together/issues"
+  }
+}

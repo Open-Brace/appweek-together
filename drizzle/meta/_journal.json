@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1790307599792,
+      "tag": "0000_clear_captain_britain",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1790308653876,
+      "tag": "0001_wakeful_jack_murdock",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1790312163818,
+      "tag": "0002_linked_event_about",
+      "breakpoints": true
+    }
+  ]
+}
